@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Calculator from "./Calculator";
-
 import "./App.pcss";
 
 type Props = {};

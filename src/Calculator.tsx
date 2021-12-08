@@ -48,7 +48,7 @@ const Calculator: FC<Props> = ({}: Props) => {
           value={value}
           onChange={onChange}
         />
-        <button type="submit">点击查询</button>
+        <button type="submit">Calculate</button>
       </form>
       <Result results={results} money={total.money}></Result>
     </div>
