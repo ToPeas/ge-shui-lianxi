@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "client": "vite --open",
+    "client": "vite --port 4000 --open",
     "client:test": "TODO",
     "server": "ts-node src-server/index.ts",
     "server:test": "TODO"
   },
   "dependencies": {
+    "number-precision": "^1.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "ts-node": "10.3.0"
