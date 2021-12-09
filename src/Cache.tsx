@@ -15,15 +15,12 @@ const Cache: FC<Props> = ({ result }: Props) => {
   const [history, setHistory] = useState<History[]>([]);
   useEffect(() => {
     let results = [];
-    try {
       let tmp = localStorage.getItem("tax_historys");
       if (tmp) {
         results = JSON.parse(tmp);
       }
       setHistory(results);
-    } catch (e) {
-      console.log("解析错误", e);
-    }
+
   }, []);
 
   useEffect(() => {

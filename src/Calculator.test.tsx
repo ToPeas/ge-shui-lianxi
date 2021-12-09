@@ -37,20 +37,17 @@ describe("<Calculator>", () => {
     expect(input).toHaveAttribute("value", "1000");
   });
 
-  // it("calls and clear input", () => {
-  //   const { input, button } = setup({});
-  //   const onSubmit = jest.fn(e => e.preventDefault());
-  //   window.HTMLFormElement.prototype.submit = () => {};
+  it("input valid value and clear input", () => {
+    const { input, button } = setup({});
+    fireEvent.change(input, {
+      target: {
+        value: "1000",
+      },
+    });
 
-  //   fireEvent.change(input, {
-  //     target: {
-  //       value: "1000",
-  //     },
-  //   });
-
-  //   fireEvent.click(button);
-  //   expect(input).toHaveAttribute("value", "");
-  // });
+    fireEvent.click(button);
+    expect(input).toHaveAttribute("value", "");
+  });
 
   it("input invalid data", () => {
     const { input, button, getByTestId } = setup({});

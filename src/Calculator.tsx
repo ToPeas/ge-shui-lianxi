@@ -24,9 +24,8 @@ const Calculator: FC<Props> = ({}: Props) => {
       }
       e.preventDefault();
       let amount = parseInt(value);
-      console.log(amount)
+      // console.log(amount)
       let resultsArr = incomeTaxCalculatorArray(amount);
-      console.log(resultsArr)
       setResults(resultsArr);
       if (resultsArr.length > 1) {
         setTotal({
