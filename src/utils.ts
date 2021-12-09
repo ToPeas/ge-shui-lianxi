@@ -23,6 +23,7 @@ export const incomeTaxCalculatorArray = (money: number): any => {
   ];
   // 税改后需纳税计算
   if (amount <= 0) {
+    res.push(...map.slice(0,1));
     amount = 0;
   } else if (amount > 0 && amount <= 5000) {
     amount = amount * 0.1;

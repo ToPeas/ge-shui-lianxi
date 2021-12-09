@@ -6,7 +6,7 @@ type Props = {
   money: number,
 };
 
-const Result: FC<Props> = ({ results,money }: Props) => {
+export const Result: FC<Props> = ({ results,money }: Props) => {
   return (
     <div>
       <div>查询薪资{money}元，查询结果:</div>

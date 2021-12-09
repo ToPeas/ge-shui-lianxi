@@ -24,7 +24,9 @@ const Calculator: FC<Props> = ({}: Props) => {
       }
       e.preventDefault();
       let amount = parseInt(value);
+      console.log(amount)
       let resultsArr = incomeTaxCalculatorArray(amount);
+      console.log(resultsArr)
       setResults(resultsArr);
       if (resultsArr.length > 1) {
         setTotal({
@@ -40,7 +42,7 @@ const Calculator: FC<Props> = ({}: Props) => {
   return (
     <div>
       <Cache result={total}></Cache>
-      <form className="main" onSubmit={onSubmit}>
+      <form className="main" onSubmit={onSubmit} data-testid="form">
         <input
           type="text"
           className="input"

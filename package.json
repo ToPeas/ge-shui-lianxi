@@ -5,7 +5,7 @@
     "client:test": "TODO",
     "server": "ts-node src-server/index.ts",
     "server:test": "TODO",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "number-precision": "^1.5.1",
