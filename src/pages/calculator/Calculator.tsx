@@ -1,8 +1,8 @@
 import React, { useState, FC, useCallback } from "react";
-import Cache from "./Cache";
-import Result from "./Result";
+import Cache from "../../components/Cache";
+import Result from "../../components/Result";
 import "./Calculator.pcss";
-import { incomeTaxCalculatorArray } from "./utils";
+import { incomeTaxCalculatorArray } from "../../utils/utils";
 
 type Props = {};
 

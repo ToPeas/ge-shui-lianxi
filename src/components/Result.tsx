@@ -1,5 +1,4 @@
 import React, { useState, FC } from "react";
-import "./App.pcss";
 
 type Props = {
   results: Array<any>;
