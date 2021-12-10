@@ -1,7 +1,4 @@
-Slasify Frontend React Personal Income Tax Calculator
-======================================================
-
-任务内容：在前端实现一个"个人所得税计算器"
+实现一个"个人所得税计算器"
 
 ## 个税计算方式
 
@@ -57,18 +54,4 @@ Total            | 439000
 5. Clean code
 6. 配置常见构建工具，如code formatter, lint等
 8. 展示你觉得好的代码实践
-
-## 启动命令
-
-启动：
-
-```
-npm run dev
-```
-
-## 运行测试
-
-```
-npm run test
-```
 
